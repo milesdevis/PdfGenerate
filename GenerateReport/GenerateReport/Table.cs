@@ -160,5 +160,7 @@ namespace GenerateReport
         public string Litres_Per_100_Kilometer_Long_Term_Average_ { get; set; }
         public string C_Session_ID { get; set; }
         public string C__Timestamp { get; set; }
+
+        
     }
 }

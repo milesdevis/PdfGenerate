@@ -28,17 +28,20 @@ namespace GenerateReport
             try
             {
                 PdfWriter.GetInstance(doc, new FileStream(filePath, FileMode.Create));
-                PdfPTable pdfTab = new PdfPTable(146);
+                PdfPTable pdfTab = new PdfPTable(2);
                 pdfTab.HorizontalAlignment = 1;
                 pdfTab.SpacingBefore = 20f;
 
                 List<InspectionField> data = new List<InspectionField>();
-                InspectionField data_1 = new InspectionField(1);
+                InspectionField data_1 = new InspectionField(1,"Hello");
+                InspectionField data_2 = new InspectionField(2, "Hola");
                 data.Add(data_1);
+                data.Add(data_2);
 
                 foreach (var item in data)
                 {
                     pdfTab.AddCell(item.Device_ID.ToString());
+                    pdfTab.AddCell(item.Feild_1.ToString());
                     //ADD Everthing else as well
 
                 }
