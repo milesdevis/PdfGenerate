@@ -32,11 +32,9 @@ namespace GenerateReport
                 pdfTab.HorizontalAlignment = 1;
                 pdfTab.SpacingBefore = 20f;
 
-                List<Table> data = new List<Table>();
-                using (MyDatabaseEntities dc = new MyDatabaseEntities())
-                {
-                    data = dc.Tables.ToList();
-                }
+                List<InspectionField> data = new List<InspectionField>();
+                InspectionField data_1 = new InspectionField(1);
+                data.Add(data_1);
 
                 foreach (var item in data)
                 {
