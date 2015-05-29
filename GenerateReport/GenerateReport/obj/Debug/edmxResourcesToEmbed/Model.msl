@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Database1Entities">
+    <EntitySetMapping Name="Tables">
+      <EntityTypeMapping TypeName="Database1Model.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="Device_ID" ColumnName="Device ID" />
+          <ScalarProperty Name="Mass_Air_Flow_Rate" ColumnName="Mass Air Flow Rate" />
+          <ScalarProperty Name="Throttle_Position_Manifold_" ColumnName="Throttle Position(Manifold)" />
+          <ScalarProperty Name="C_Air_Status" ColumnName=" Air Status" />
+          <ScalarProperty Name="C_Fuel_trim_Bank__1_Sensor__1" ColumnName=" Fuel trim Bank: 1 Sensor: 1" />
+          <ScalarProperty Name="C_Fuel_trim_Bank__1_Sensor__2" ColumnName=" Fuel trim Bank: 1 Sensor: 2" />
+          <ScalarProperty Name="Fuel_trim_Bank__1_Sensor__3" ColumnName="Fuel trim Bank: 1 Sensor: 3" />
+          <ScalarProperty Name="Fuel_trim_Bank__1_Sensor__4" ColumnName="Fuel trim Bank: 1 Sensor: 4" />
+          <ScalarProperty Name="Fuel_trim_Bank__2_Sensor__1" ColumnName="Fuel trim Bank: 2 Sensor: 1" />
+          <ScalarProperty Name="Fuel_trim_Bank__2_Sensor__2" ColumnName="Fuel trim Bank: 2 Sensor: 2" />
+          <ScalarProperty Name="Fuel_trim_Bank__2_Sensor__3" ColumnName="Fuel trim Bank: 2 Sensor: 3" />
+          <ScalarProperty Name="Fuel_trim_Bank__2_Sensor__4" ColumnName="Fuel trim Bank: 2 Sensor: 4" />
+          <ScalarProperty Name="Run_Time_since_engine_start" ColumnName="Run Time since engine start" />
+          <ScalarProperty Name="Distance_travelled_with_MIL_CEL_lit" ColumnName="Distance travelled with MIL/CEL lit" />
+          <ScalarProperty Name="Fuel_Rail_Pressure__relative_to_manifold_vacuum_" ColumnName="Fuel Rail Pressure (relative to manifold vacuum)" />
+          <ScalarProperty Name="Fuel_Rail_Pressure" ColumnName="Fuel Rail Pressure" />
+          <ScalarProperty Name="O2_Sensor1_Equivalence_Ratio" ColumnName="O2 Sensor1 Equivalence Ratio" />
+          <ScalarProperty Name="O2_Sensor2_Equivalence_Ratio" ColumnName="O2 Sensor2 Equivalence Ratio" />
+          <ScalarProperty Name="O2_Sensor3_Equivalence_Ratio" ColumnName="O2 Sensor3 Equivalence Ratio" />
+          <ScalarProperty Name="O2_Sensor4_Equivalence_Ratio" ColumnName="O2 Sensor4 Equivalence Ratio" />
+          <ScalarProperty Name="O2_Sensor5_Equivalence_Ratio" ColumnName="O2 Sensor5 Equivalence Ratio" />
+          <ScalarProperty Name="O2_Sensor6_Equivalence_Ratio" ColumnName="O2 Sensor6 Equivalence Ratio" />
+          <ScalarProperty Name="O2_Sensor7_Equivalence_Ratio" ColumnName="O2 Sensor7 Equivalence Ratio" />
+          <ScalarProperty Name="O2_Sensor8_Equivalence_Ratio" ColumnName="O2 Sensor8 Equivalence Ratio" />
+          <ScalarProperty Name="C_EGR_Commanded" ColumnName=" EGR Commanded" />
+          <ScalarProperty Name="EGR_Error" ColumnName="EGR Error" />
+          <ScalarProperty Name="Fuel_Level__From_Engine_ECU_" ColumnName="Fuel Level (From Engine ECU)" />
+          <ScalarProperty Name="C_Fuel_Status" ColumnName=" Fuel Status" />
+          <ScalarProperty Name="Distance_travelled_since_codes_cleared" ColumnName="Distance travelled since codes cleared" />
+          <ScalarProperty Name="C_Evap_System_Vapour_Pressure" ColumnName=" Evap System Vapour Pressure" />
+          <ScalarProperty Name="Barometric_pressure__from_vehicle_" ColumnName="Barometric pressure (from vehicle)" />
+          <ScalarProperty Name="O2_Sensor1_Equivalence_Ratio_alternate_" ColumnName="O2 Sensor1 Equivalence Ratio(alternate)" />
+          <ScalarProperty Name="C_Catalyst_Temperature__Bank_1_Sensor_1_" ColumnName=" Catalyst Temperature (Bank 1 Sensor 1)" />
+          <ScalarProperty Name="C__Catalyst_Temperature__Bank_2_Sensor_1_" ColumnName="  Catalyst Temperature (Bank 2 Sensor 1)" />
+          <ScalarProperty Name="C_Catalyst_Temperature__Bank_1_Sensor_2_" ColumnName=" Catalyst Temperature (Bank 1 Sensor 2)" />
+          <ScalarProperty Name="Catalyst_Temperature__Bank_2_Sensor_2_" ColumnName="Catalyst Temperature (Bank 2 Sensor 2)" />
+          <ScalarProperty Name="Engine_Load" ColumnName="Engine Load" />
+          <ScalarProperty Name="Voltage__Control_Module_" ColumnName="Voltage (Control Module)" />
+          <ScalarProperty Name="Engine_Load_Absolute_" ColumnName="Engine Load(Absolute)" />
+          <ScalarProperty Name="Commanded_Equivalence_Ratio_lambda_" ColumnName="Commanded Equivalence Ratio(lambda)" />
+          <ScalarProperty Name="Relative_Throttle_Position" ColumnName="Relative Throttle Position" />
+          <ScalarProperty Name="Ambient_air_temp" ColumnName="Ambient air temp" />
+          <ScalarProperty Name="Absolute_Throttle_Position_B" ColumnName="Absolute Throttle Position B" />
+          <ScalarProperty Name="Accelerator_PedalPosition_D" ColumnName="Accelerator PedalPosition D" />
+          <ScalarProperty Name="Accelerator_PedalPosition_E" ColumnName="Accelerator PedalPosition E" />
+          <ScalarProperty Name="C_Accelerator_PedalPosition_F" ColumnName=" Accelerator PedalPosition F" />
+          <ScalarProperty Name="Engine_Coolant_Temperature" ColumnName="Engine Coolant Temperature" />
+          <ScalarProperty Name="Ethanol_Fuel__" ColumnName="Ethanol Fuel %" />
+          <ScalarProperty Name="Relative_Accelerator_Pedal_Position" ColumnName="Relative Accelerator Pedal Position" />
+          <ScalarProperty Name="C_Engine_Oil_Temperature" ColumnName=" Engine Oil Temperature" />
+          <ScalarProperty Name="C_Fuel_Trim_Bank_1_Short_Term" ColumnName=" Fuel Trim Bank 1 Short Term" />
+          <ScalarProperty Name="C_Fuel_Trim_Bank_1_Long_Term" ColumnName=" Fuel Trim Bank 1 Long Term" />
+          <ScalarProperty Name="Exhaust_Gas_Temperature_1" ColumnName="Exhaust Gas Temperature 1" />
+          <ScalarProperty Name="C_Exhaust_Gas_Temperature_2" ColumnName=" Exhaust Gas Temperature 2" />
+          <ScalarProperty Name="Fuel_Trim_Bank_2_Short_Term" ColumnName="Fuel Trim Bank 2 Short Term" />
+          <ScalarProperty Name="Fuel_Trim_Bank_2_Long_Term" ColumnName="Fuel Trim Bank 2 Long Term" />
+          <ScalarProperty Name="Fuel_pressure" ColumnName="Fuel pressure" />
+          <ScalarProperty Name="C_Intake_Manifold_Pressure" ColumnName=" Intake Manifold Pressure" />
+          <ScalarProperty Name="Transmission_Temperature_Method_2_" ColumnName="Transmission Temperature(Method 2)" />
+          <ScalarProperty Name="Engine_RPM" ColumnName="Engine RPM" />
+          <ScalarProperty Name="C_Speed__OBD_" ColumnName=" Speed (OBD)" />
+          <ScalarProperty Name="C_Timing_Advance" ColumnName=" Timing Advance" />
+          <ScalarProperty Name="Intake_Air_Temperature" ColumnName="Intake Air Temperature" />
+          <ScalarProperty Name="Transmission_Temperature_Method_1_" ColumnName="Transmission Temperature(Method 1)" />
+          <ScalarProperty Name="Speed__GPS_" ColumnName="Speed (GPS)" />
+          <ScalarProperty Name="GPS_Longitude" ColumnName="GPS Longitude" />
+          <ScalarProperty Name="GPS_Latitude" ColumnName="GPS Latitude" />
+          <ScalarProperty Name="GPS_Altitude" ColumnName="GPS Altitude" />
+          <ScalarProperty Name="Miles_Per_Gallon_Instant_" ColumnName="Miles Per Gallon(Instant)" />
+          <ScalarProperty Name="Turbo_Boost___Vacuum_Gauge" ColumnName="Turbo Boost &amp; Vacuum Gauge" />
+          <ScalarProperty Name="C_Kilometers_Per_Litre_Instant_" ColumnName=" Kilometers Per Litre(Instant)" />
+          <ScalarProperty Name="Trip_Distance" ColumnName="Trip Distance" />
+          <ScalarProperty Name="Trip_average_MPG" ColumnName="Trip average MPG" />
+          <ScalarProperty Name="C_Trip_average_KPL" ColumnName=" Trip average KPL" />
+          <ScalarProperty Name="Litres_Per_100_Kilometer_Instant_" ColumnName="Litres Per 100 Kilometer(Instant)" />
+          <ScalarProperty Name="Trip_average_Litres_100_KM" ColumnName="Trip average Litres/100 KM" />
+          <ScalarProperty Name="Trip_distance__stored_in_vehicle_profile_" ColumnName="Trip distance (stored in vehicle profile)" />
+          <ScalarProperty Name="O2_Volts_Bank_1_sensor_1" ColumnName="O2 Volts Bank 1 sensor 1" />
+          <ScalarProperty Name="O2_Volts_Bank_1_sensor_2" ColumnName="O2 Volts Bank 1 sensor 2" />
+          <ScalarProperty Name="O2_Volts_Bank_1_sensor_3" ColumnName="O2 Volts Bank 1 sensor 3" />
+          <ScalarProperty Name="O2_Volts_Bank_1_sensor_4" ColumnName="O2 Volts Bank 1 sensor 4" />
+          <ScalarProperty Name="O2_Volts_Bank_2_sensor_1" ColumnName="O2 Volts Bank 2 sensor 1" />
+          <ScalarProperty Name="O2_Volts_Bank_2_sensor_2" ColumnName="O2 Volts Bank 2 sensor 2" />
+          <ScalarProperty Name="O2_Volts_Bank_2_sensor_3" ColumnName="O2 Volts Bank 2 sensor 3" />
+          <ScalarProperty Name="C_O2_Volts_Bank_2_sensor_4" ColumnName=" O2 Volts Bank 2 sensor 4" />
+          <ScalarProperty Name="Acceleration_Sensor_X_axis_" ColumnName="Acceleration Sensor(X axis)" />
+          <ScalarProperty Name="Acceleration_Sensor_Y_axis_" ColumnName="Acceleration Sensor(Y axis)" />
+          <ScalarProperty Name="C__Acceleration_Sensor_Z_axis_" ColumnName="  Acceleration Sensor(Z axis)" />
+          <ScalarProperty Name="Acceleration_Sensor_Total_" ColumnName="Acceleration Sensor(Total)" />
+          <ScalarProperty Name="Torque" ColumnName="Torque" />
+          <ScalarProperty Name="Horsepower__At_the_wheels_" ColumnName="Horsepower (At the wheels)" />
+          <ScalarProperty Name="C_0_60mph_Time" ColumnName=" 0-60mph Time" />
+          <ScalarProperty Name="C__0_100kph_Time" ColumnName="  0-100kph Time" />
+          <ScalarProperty Name="C1_4_mile_time" ColumnName="1/4 mile time" />
+          <ScalarProperty Name="C_1_8_mile_time" ColumnName=" 1/8 mile time" />
+          <ScalarProperty Name="GPS_vs_OBD_Speed_difference" ColumnName="GPS vs OBD Speed difference" />
+          <ScalarProperty Name="Voltage__OBD_Adapter_" ColumnName="Voltage (OBD Adapter)" />
+          <ScalarProperty Name="GPS_Accuracy" ColumnName="GPS Accuracy" />
+          <ScalarProperty Name="C_GPS_Satellites" ColumnName=" GPS Satellites" />
+          <ScalarProperty Name="C_GPS_Bearing" ColumnName=" GPS Bearing" />
+          <ScalarProperty Name="C_O2_Sensor1_wide_range_Voltage" ColumnName=" O2 Sensor1 wide-range Voltage" />
+          <ScalarProperty Name="O2_Sensor2_wide_range_Voltage" ColumnName="O2 Sensor2 wide-range Voltage" />
+          <ScalarProperty Name="C_O2_Sensor3_wide_range_Voltage" ColumnName=" O2 Sensor3 wide-range Voltage" />
+          <ScalarProperty Name="C_O2_Sensor4_wide_range_Voltage" ColumnName=" O2 Sensor4 wide-range Voltage" />
+          <ScalarProperty Name="O2_Sensor5_wide_range_Voltage" ColumnName="O2 Sensor5 wide-range Voltage" />
+          <ScalarProperty Name="O2_Sensor6_wide_range_Voltage" ColumnName="O2 Sensor6 wide-range Voltage" />
+          <ScalarProperty Name="O2_Sensor7_wide_range_Voltage" ColumnName="O2 Sensor7 wide-range Voltage" />
+          <ScalarProperty Name="O2_Sensor8_wide_range_Voltage" ColumnName="O2 Sensor8 wide-range Voltage" />
+          <ScalarProperty Name="C_Air_Fuel_Ratio_Measured_" ColumnName=" Air Fuel Ratio(Measured)" />
+          <ScalarProperty Name="Tilt_x_" ColumnName="Tilt(x)" />
+          <ScalarProperty Name="C_Tilt_y_" ColumnName=" Tilt(y)" />
+          <ScalarProperty Name="C_Tilt_z_" ColumnName=" Tilt(z)" />
+          <ScalarProperty Name="Air_Fuel_Ratio_Commanded_" ColumnName="Air Fuel Ratio(Commanded)" />
+          <ScalarProperty Name="C_0_200kph_Time" ColumnName=" 0-200kph Time" />
+          <ScalarProperty Name="C_COâ___in_g_km__Instantaneous_" ColumnName=" COâ‚‚ in g/km (Instantaneous)" />
+          <ScalarProperty Name="C_COâ___in_g_km__Average_" ColumnName=" COâ‚‚ in g/km (Average)" />
+          <ScalarProperty Name="C_Fuel_flow_rate_minute" ColumnName=" Fuel flow rate/minute" />
+          <ScalarProperty Name="Fuel_cost__trip_" ColumnName="Fuel cost (trip)" />
+          <ScalarProperty Name="Fuel_flow_rate_hour" ColumnName="Fuel flow rate/hour" />
+          <ScalarProperty Name="C60_120mph_Time" ColumnName="60-120mph Time" />
+          <ScalarProperty Name="C60_80mph_Time" ColumnName="60-80mph Time" />
+          <ScalarProperty Name="C40_60mph_Time" ColumnName="40-60mph Time" />
+          <ScalarProperty Name="C__80_100mph_Time" ColumnName="  80-100mph Time" />
+          <ScalarProperty Name="C_Average_trip_speed_whilst_moving_only_" ColumnName=" Average trip speed(whilst moving only)" />
+          <ScalarProperty Name="C100_0kph_Time" ColumnName="100-0kph Time" />
+          <ScalarProperty Name="C60_0mph_Time" ColumnName="60-0mph Time" />
+          <ScalarProperty Name="Trip_Time_Since_journey_start_" ColumnName="Trip Time(Since journey start)" />
+          <ScalarProperty Name="Trip_time_whilst_stationary_" ColumnName="Trip time(whilst stationary)" />
+          <ScalarProperty Name="Trip_Time_whilst_moving_" ColumnName="Trip Time(whilst moving)" />
+          <ScalarProperty Name="Volumetric_Efficiency__Calculated_" ColumnName="Volumetric Efficiency (Calculated)" />
+          <ScalarProperty Name="Distance_to_empty__Estimated_" ColumnName="Distance to empty (Estimated)" />
+          <ScalarProperty Name="Fuel_Remaining__Calculated_from_vehicle_profile_" ColumnName="Fuel Remaining (Calculated from vehicle profile)" />
+          <ScalarProperty Name="C__Cost_per_mile_km__Instant_" ColumnName="  Cost per mile/km (Instant)" />
+          <ScalarProperty Name="C_Cost_per_mile_km__Trip_" ColumnName=" Cost per mile/km (Trip)" />
+          <ScalarProperty Name="Barometer__on_Android_device_" ColumnName="Barometer (on Android device)" />
+          <ScalarProperty Name="Fuel_used__trip_" ColumnName="Fuel used (trip)" />
+          <ScalarProperty Name="Average_trip_speed_whilst_stopped_or_moving_" ColumnName="Average trip speed(whilst stopped or moving)" />
+          <ScalarProperty Name="C_Engine_kW__At_the_wheels_" ColumnName=" Engine kW (At the wheels)" />
+          <ScalarProperty Name="C80_120kph_Time" ColumnName="80-120kph Time" />
+          <ScalarProperty Name="C_60_130mph_Time" ColumnName=" 60-130mph Time" />
+          <ScalarProperty Name="C0_30mph_Time" ColumnName="0-30mph Time" />
+          <ScalarProperty Name="C_Miles_Per_Gallon_Long_Term_Average_" ColumnName=" Miles Per Gallon(Long Term Average)" />
+          <ScalarProperty Name="C_Kilometers_Per_Litre_Long_Term_Average_" ColumnName=" Kilometers Per Litre(Long Term Average)" />
+          <ScalarProperty Name="Litres_Per_100_Kilometer_Long_Term_Average_" ColumnName="Litres Per 100 Kilometer(Long Term Average)" />
+          <ScalarProperty Name="C_Session_ID" ColumnName=" Session ID" />
+          <ScalarProperty Name="C__Timestamp" ColumnName="  Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

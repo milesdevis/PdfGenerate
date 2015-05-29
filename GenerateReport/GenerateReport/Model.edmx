@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Database1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Table">
+          <Key>
+            <PropertyRef Name="Device ID" />
+          </Key>
+          <Property Name="Device ID" Type="int" Nullable="false" />
+          <Property Name="Mass Air Flow Rate" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Throttle Position(Manifold)" Type="nchar" MaxLength="20" Nullable="false" />
+          <Property Name=" Air Status" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name=" Fuel trim Bank: 1 Sensor: 1" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Fuel trim Bank: 1 Sensor: 2" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel trim Bank: 1 Sensor: 3" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel trim Bank: 1 Sensor: 4" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel trim Bank: 2 Sensor: 1" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel trim Bank: 2 Sensor: 2" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel trim Bank: 2 Sensor: 3" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel trim Bank: 2 Sensor: 4" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Run Time since engine start" Type="nchar" MaxLength="15" Nullable="false" />
+          <Property Name="Distance travelled with MIL/CEL lit" Type="nchar" MaxLength="20" Nullable="false" />
+          <Property Name="Fuel Rail Pressure (relative to manifold vacuum)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel Rail Pressure" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor1 Equivalence Ratio" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor2 Equivalence Ratio" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor3 Equivalence Ratio" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor4 Equivalence Ratio" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor5 Equivalence Ratio" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor6 Equivalence Ratio" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor7 Equivalence Ratio" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor8 Equivalence Ratio" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" EGR Commanded" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="EGR Error" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel Level (From Engine ECU)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Fuel Status" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Distance travelled since codes cleared" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Evap System Vapour Pressure" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Barometric pressure (from vehicle)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor1 Equivalence Ratio(alternate)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Catalyst Temperature (Bank 1 Sensor 1)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="  Catalyst Temperature (Bank 2 Sensor 1)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Catalyst Temperature (Bank 1 Sensor 2)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Catalyst Temperature (Bank 2 Sensor 2)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Engine Load" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Voltage (Control Module)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Engine Load(Absolute)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Commanded Equivalence Ratio(lambda)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Relative Throttle Position" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Ambient air temp" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Absolute Throttle Position B" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Accelerator PedalPosition D" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Accelerator PedalPosition E" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Accelerator PedalPosition F" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Engine Coolant Temperature" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Ethanol Fuel %" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Relative Accelerator Pedal Position" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Engine Oil Temperature" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Fuel Trim Bank 1 Short Term" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Fuel Trim Bank 1 Long Term" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Exhaust Gas Temperature 1" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Exhaust Gas Temperature 2" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel Trim Bank 2 Short Term" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel Trim Bank 2 Long Term" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel pressure" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Intake Manifold Pressure" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Transmission Temperature(Method 2)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Engine RPM" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Speed (OBD)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Timing Advance" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Intake Air Temperature" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Transmission Temperature(Method 1)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Speed (GPS)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="GPS Longitude" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="GPS Latitude" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="GPS Altitude" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Miles Per Gallon(Instant)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Turbo Boost &amp; Vacuum Gauge" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Kilometers Per Litre(Instant)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Trip Distance" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Trip average MPG" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Trip average KPL" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Litres Per 100 Kilometer(Instant)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Trip average Litres/100 KM" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Trip distance (stored in vehicle profile)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Volts Bank 1 sensor 1" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Volts Bank 1 sensor 2" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Volts Bank 1 sensor 3" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Volts Bank 1 sensor 4" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Volts Bank 2 sensor 1" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Volts Bank 2 sensor 2" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Volts Bank 2 sensor 3" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" O2 Volts Bank 2 sensor 4" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Acceleration Sensor(X axis)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Acceleration Sensor(Y axis)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="  Acceleration Sensor(Z axis)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Acceleration Sensor(Total)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Torque" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Horsepower (At the wheels)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" 0-60mph Time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="  0-100kph Time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="1/4 mile time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" 1/8 mile time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="GPS vs OBD Speed difference" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Voltage (OBD Adapter)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="GPS Accuracy" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" GPS Satellites" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" GPS Bearing" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" O2 Sensor1 wide-range Voltage" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor2 wide-range Voltage" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" O2 Sensor3 wide-range Voltage" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" O2 Sensor4 wide-range Voltage" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor5 wide-range Voltage" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor6 wide-range Voltage" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor7 wide-range Voltage" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="O2 Sensor8 wide-range Voltage" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Air Fuel Ratio(Measured)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Tilt(x)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Tilt(y)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Tilt(z)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Air Fuel Ratio(Commanded)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" 0-200kph Time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" COâ‚‚ in g/km (Instantaneous)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" COâ‚‚ in g/km (Average)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Fuel flow rate/minute" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel cost (trip)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel flow rate/hour" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="60-120mph Time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="60-80mph Time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="40-60mph Time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="  80-100mph Time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Average trip speed(whilst moving only)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="100-0kph Time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="60-0mph Time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Trip Time(Since journey start)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Trip time(whilst stationary)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Trip Time(whilst moving)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Volumetric Efficiency (Calculated)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Distance to empty (Estimated)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel Remaining (Calculated from vehicle profile)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="  Cost per mile/km (Instant)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Cost per mile/km (Trip)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Barometer (on Android device)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel used (trip)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Average trip speed(whilst stopped or moving)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Engine kW (At the wheels)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="80-120kph Time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" 60-130mph Time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="0-30mph Time" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Miles Per Gallon(Long Term Average)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Kilometers Per Litre(Long Term Average)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Litres Per 100 Kilometer(Long Term Average)" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name=" Session ID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="  Timestamp" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Database1ModelStoreContainer">
+          <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Database1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Table">
+          <Key>
+            <PropertyRef Name="Device_ID" />
+          </Key>
+          <Property Name="Device_ID" Type="Int32" Nullable="false" />
+          <Property Name="Mass_Air_Flow_Rate" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Throttle_Position_Manifold_" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Air_Status" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Fuel_trim_Bank__1_Sensor__1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Fuel_trim_Bank__1_Sensor__2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_trim_Bank__1_Sensor__3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_trim_Bank__1_Sensor__4" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_trim_Bank__2_Sensor__1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_trim_Bank__2_Sensor__2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_trim_Bank__2_Sensor__3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_trim_Bank__2_Sensor__4" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Run_Time_since_engine_start" Type="String" MaxLength="15" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Distance_travelled_with_MIL_CEL_lit" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_Rail_Pressure__relative_to_manifold_vacuum_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_Rail_Pressure" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor1_Equivalence_Ratio" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor2_Equivalence_Ratio" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor3_Equivalence_Ratio" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor4_Equivalence_Ratio" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor5_Equivalence_Ratio" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor6_Equivalence_Ratio" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor7_Equivalence_Ratio" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor8_Equivalence_Ratio" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_EGR_Commanded" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="EGR_Error" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_Level__From_Engine_ECU_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Fuel_Status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Distance_travelled_since_codes_cleared" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Evap_System_Vapour_Pressure" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Barometric_pressure__from_vehicle_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor1_Equivalence_Ratio_alternate_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Catalyst_Temperature__Bank_1_Sensor_1_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C__Catalyst_Temperature__Bank_2_Sensor_1_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Catalyst_Temperature__Bank_1_Sensor_2_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Catalyst_Temperature__Bank_2_Sensor_2_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Engine_Load" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Voltage__Control_Module_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Engine_Load_Absolute_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Commanded_Equivalence_Ratio_lambda_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Relative_Throttle_Position" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Ambient_air_temp" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Absolute_Throttle_Position_B" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Accelerator_PedalPosition_D" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Accelerator_PedalPosition_E" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Accelerator_PedalPosition_F" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Engine_Coolant_Temperature" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Ethanol_Fuel__" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Relative_Accelerator_Pedal_Position" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Engine_Oil_Temperature" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Fuel_Trim_Bank_1_Short_Term" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Fuel_Trim_Bank_1_Long_Term" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Exhaust_Gas_Temperature_1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Exhaust_Gas_Temperature_2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_Trim_Bank_2_Short_Term" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_Trim_Bank_2_Long_Term" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_pressure" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Intake_Manifold_Pressure" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Transmission_Temperature_Method_2_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Engine_RPM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Speed__OBD_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Timing_Advance" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Intake_Air_Temperature" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Transmission_Temperature_Method_1_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Speed__GPS_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="GPS_Longitude" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="GPS_Latitude" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="GPS_Altitude" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Miles_Per_Gallon_Instant_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Turbo_Boost___Vacuum_Gauge" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Kilometers_Per_Litre_Instant_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Trip_Distance" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Trip_average_MPG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Trip_average_KPL" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Litres_Per_100_Kilometer_Instant_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Trip_average_Litres_100_KM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Trip_distance__stored_in_vehicle_profile_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Volts_Bank_1_sensor_1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Volts_Bank_1_sensor_2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Volts_Bank_1_sensor_3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Volts_Bank_1_sensor_4" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Volts_Bank_2_sensor_1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Volts_Bank_2_sensor_2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Volts_Bank_2_sensor_3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_O2_Volts_Bank_2_sensor_4" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Acceleration_Sensor_X_axis_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Acceleration_Sensor_Y_axis_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C__Acceleration_Sensor_Z_axis_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Acceleration_Sensor_Total_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Torque" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Horsepower__At_the_wheels_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_0_60mph_Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C__0_100kph_Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C1_4_mile_time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_1_8_mile_time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="GPS_vs_OBD_Speed_difference" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Voltage__OBD_Adapter_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="GPS_Accuracy" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_GPS_Satellites" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_GPS_Bearing" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_O2_Sensor1_wide_range_Voltage" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor2_wide_range_Voltage" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_O2_Sensor3_wide_range_Voltage" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_O2_Sensor4_wide_range_Voltage" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor5_wide_range_Voltage" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor6_wide_range_Voltage" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor7_wide_range_Voltage" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="O2_Sensor8_wide_range_Voltage" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Air_Fuel_Ratio_Measured_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Tilt_x_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Tilt_y_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Tilt_z_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Air_Fuel_Ratio_Commanded_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_0_200kph_Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_COâ___in_g_km__Instantaneous_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_COâ___in_g_km__Average_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Fuel_flow_rate_minute" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_cost__trip_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_flow_rate_hour" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C60_120mph_Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C60_80mph_Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C40_60mph_Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C__80_100mph_Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Average_trip_speed_whilst_moving_only_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C100_0kph_Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C60_0mph_Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Trip_Time_Since_journey_start_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Trip_time_whilst_stationary_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Trip_Time_whilst_moving_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Volumetric_Efficiency__Calculated_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Distance_to_empty__Estimated_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_Remaining__Calculated_from_vehicle_profile_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C__Cost_per_mile_km__Instant_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Cost_per_mile_km__Trip_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Barometer__on_Android_device_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Fuel_used__trip_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Average_trip_speed_whilst_stopped_or_moving_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Engine_kW__At_the_wheels_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C80_120kph_Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_60_130mph_Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C0_30mph_Time" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Miles_Per_Gallon_Long_Term_Average_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Kilometers_Per_Litre_Long_Term_Average_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Litres_Per_100_Kilometer_Long_Term_Average_" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C_Session_ID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="C__Timestamp" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Database1Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Tables" EntityType="Self.Table" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Database1Entities">
+          <EntitySetMapping Name="Tables">
+            <EntityTypeMapping TypeName="Database1Model.Table">
+              <MappingFragment StoreEntitySet="Table">
+                <ScalarProperty Name="Device_ID" ColumnName="Device ID" />
+                <ScalarProperty Name="Mass_Air_Flow_Rate" ColumnName="Mass Air Flow Rate" />
+                <ScalarProperty Name="Throttle_Position_Manifold_" ColumnName="Throttle Position(Manifold)" />
+                <ScalarProperty Name="C_Air_Status" ColumnName=" Air Status" />
+                <ScalarProperty Name="C_Fuel_trim_Bank__1_Sensor__1" ColumnName=" Fuel trim Bank: 1 Sensor: 1" />
+                <ScalarProperty Name="C_Fuel_trim_Bank__1_Sensor__2" ColumnName=" Fuel trim Bank: 1 Sensor: 2" />
+                <ScalarProperty Name="Fuel_trim_Bank__1_Sensor__3" ColumnName="Fuel trim Bank: 1 Sensor: 3" />
+                <ScalarProperty Name="Fuel_trim_Bank__1_Sensor__4" ColumnName="Fuel trim Bank: 1 Sensor: 4" />
+                <ScalarProperty Name="Fuel_trim_Bank__2_Sensor__1" ColumnName="Fuel trim Bank: 2 Sensor: 1" />
+                <ScalarProperty Name="Fuel_trim_Bank__2_Sensor__2" ColumnName="Fuel trim Bank: 2 Sensor: 2" />
+                <ScalarProperty Name="Fuel_trim_Bank__2_Sensor__3" ColumnName="Fuel trim Bank: 2 Sensor: 3" />
+                <ScalarProperty Name="Fuel_trim_Bank__2_Sensor__4" ColumnName="Fuel trim Bank: 2 Sensor: 4" />
+                <ScalarProperty Name="Run_Time_since_engine_start" ColumnName="Run Time since engine start" />
+                <ScalarProperty Name="Distance_travelled_with_MIL_CEL_lit" ColumnName="Distance travelled with MIL/CEL lit" />
+                <ScalarProperty Name="Fuel_Rail_Pressure__relative_to_manifold_vacuum_" ColumnName="Fuel Rail Pressure (relative to manifold vacuum)" />
+                <ScalarProperty Name="Fuel_Rail_Pressure" ColumnName="Fuel Rail Pressure" />
+                <ScalarProperty Name="O2_Sensor1_Equivalence_Ratio" ColumnName="O2 Sensor1 Equivalence Ratio" />
+                <ScalarProperty Name="O2_Sensor2_Equivalence_Ratio" ColumnName="O2 Sensor2 Equivalence Ratio" />
+                <ScalarProperty Name="O2_Sensor3_Equivalence_Ratio" ColumnName="O2 Sensor3 Equivalence Ratio" />
+                <ScalarProperty Name="O2_Sensor4_Equivalence_Ratio" ColumnName="O2 Sensor4 Equivalence Ratio" />
+                <ScalarProperty Name="O2_Sensor5_Equivalence_Ratio" ColumnName="O2 Sensor5 Equivalence Ratio" />
+                <ScalarProperty Name="O2_Sensor6_Equivalence_Ratio" ColumnName="O2 Sensor6 Equivalence Ratio" />
+                <ScalarProperty Name="O2_Sensor7_Equivalence_Ratio" ColumnName="O2 Sensor7 Equivalence Ratio" />
+                <ScalarProperty Name="O2_Sensor8_Equivalence_Ratio" ColumnName="O2 Sensor8 Equivalence Ratio" />
+                <ScalarProperty Name="C_EGR_Commanded" ColumnName=" EGR Commanded" />
+                <ScalarProperty Name="EGR_Error" ColumnName="EGR Error" />
+                <ScalarProperty Name="Fuel_Level__From_Engine_ECU_" ColumnName="Fuel Level (From Engine ECU)" />
+                <ScalarProperty Name="C_Fuel_Status" ColumnName=" Fuel Status" />
+                <ScalarProperty Name="Distance_travelled_since_codes_cleared" ColumnName="Distance travelled since codes cleared" />
+                <ScalarProperty Name="C_Evap_System_Vapour_Pressure" ColumnName=" Evap System Vapour Pressure" />
+                <ScalarProperty Name="Barometric_pressure__from_vehicle_" ColumnName="Barometric pressure (from vehicle)" />
+                <ScalarProperty Name="O2_Sensor1_Equivalence_Ratio_alternate_" ColumnName="O2 Sensor1 Equivalence Ratio(alternate)" />
+                <ScalarProperty Name="C_Catalyst_Temperature__Bank_1_Sensor_1_" ColumnName=" Catalyst Temperature (Bank 1 Sensor 1)" />
+                <ScalarProperty Name="C__Catalyst_Temperature__Bank_2_Sensor_1_" ColumnName="  Catalyst Temperature (Bank 2 Sensor 1)" />
+                <ScalarProperty Name="C_Catalyst_Temperature__Bank_1_Sensor_2_" ColumnName=" Catalyst Temperature (Bank 1 Sensor 2)" />
+                <ScalarProperty Name="Catalyst_Temperature__Bank_2_Sensor_2_" ColumnName="Catalyst Temperature (Bank 2 Sensor 2)" />
+                <ScalarProperty Name="Engine_Load" ColumnName="Engine Load" />
+                <ScalarProperty Name="Voltage__Control_Module_" ColumnName="Voltage (Control Module)" />
+                <ScalarProperty Name="Engine_Load_Absolute_" ColumnName="Engine Load(Absolute)" />
+                <ScalarProperty Name="Commanded_Equivalence_Ratio_lambda_" ColumnName="Commanded Equivalence Ratio(lambda)" />
+                <ScalarProperty Name="Relative_Throttle_Position" ColumnName="Relative Throttle Position" />
+                <ScalarProperty Name="Ambient_air_temp" ColumnName="Ambient air temp" />
+                <ScalarProperty Name="Absolute_Throttle_Position_B" ColumnName="Absolute Throttle Position B" />
+                <ScalarProperty Name="Accelerator_PedalPosition_D" ColumnName="Accelerator PedalPosition D" />
+                <ScalarProperty Name="Accelerator_PedalPosition_E" ColumnName="Accelerator PedalPosition E" />
+                <ScalarProperty Name="C_Accelerator_PedalPosition_F" ColumnName=" Accelerator PedalPosition F" />
+                <ScalarProperty Name="Engine_Coolant_Temperature" ColumnName="Engine Coolant Temperature" />
+                <ScalarProperty Name="Ethanol_Fuel__" ColumnName="Ethanol Fuel %" />
+                <ScalarProperty Name="Relative_Accelerator_Pedal_Position" ColumnName="Relative Accelerator Pedal Position" />
+                <ScalarProperty Name="C_Engine_Oil_Temperature" ColumnName=" Engine Oil Temperature" />
+                <ScalarProperty Name="C_Fuel_Trim_Bank_1_Short_Term" ColumnName=" Fuel Trim Bank 1 Short Term" />
+                <ScalarProperty Name="C_Fuel_Trim_Bank_1_Long_Term" ColumnName=" Fuel Trim Bank 1 Long Term" />
+                <ScalarProperty Name="Exhaust_Gas_Temperature_1" ColumnName="Exhaust Gas Temperature 1" />
+                <ScalarProperty Name="C_Exhaust_Gas_Temperature_2" ColumnName=" Exhaust Gas Temperature 2" />
+                <ScalarProperty Name="Fuel_Trim_Bank_2_Short_Term" ColumnName="Fuel Trim Bank 2 Short Term" />
+                <ScalarProperty Name="Fuel_Trim_Bank_2_Long_Term" ColumnName="Fuel Trim Bank 2 Long Term" />
+                <ScalarProperty Name="Fuel_pressure" ColumnName="Fuel pressure" />
+                <ScalarProperty Name="C_Intake_Manifold_Pressure" ColumnName=" Intake Manifold Pressure" />
+                <ScalarProperty Name="Transmission_Temperature_Method_2_" ColumnName="Transmission Temperature(Method 2)" />
+                <ScalarProperty Name="Engine_RPM" ColumnName="Engine RPM" />
+                <ScalarProperty Name="C_Speed__OBD_" ColumnName=" Speed (OBD)" />
+                <ScalarProperty Name="C_Timing_Advance" ColumnName=" Timing Advance" />
+                <ScalarProperty Name="Intake_Air_Temperature" ColumnName="Intake Air Temperature" />
+                <ScalarProperty Name="Transmission_Temperature_Method_1_" ColumnName="Transmission Temperature(Method 1)" />
+                <ScalarProperty Name="Speed__GPS_" ColumnName="Speed (GPS)" />
+                <ScalarProperty Name="GPS_Longitude" ColumnName="GPS Longitude" />
+                <ScalarProperty Name="GPS_Latitude" ColumnName="GPS Latitude" />
+                <ScalarProperty Name="GPS_Altitude" ColumnName="GPS Altitude" />
+                <ScalarProperty Name="Miles_Per_Gallon_Instant_" ColumnName="Miles Per Gallon(Instant)" />
+                <ScalarProperty Name="Turbo_Boost___Vacuum_Gauge" ColumnName="Turbo Boost &amp; Vacuum Gauge" />
+                <ScalarProperty Name="C_Kilometers_Per_Litre_Instant_" ColumnName=" Kilometers Per Litre(Instant)" />
+                <ScalarProperty Name="Trip_Distance" ColumnName="Trip Distance" />
+                <ScalarProperty Name="Trip_average_MPG" ColumnName="Trip average MPG" />
+                <ScalarProperty Name="C_Trip_average_KPL" ColumnName=" Trip average KPL" />
+                <ScalarProperty Name="Litres_Per_100_Kilometer_Instant_" ColumnName="Litres Per 100 Kilometer(Instant)" />
+                <ScalarProperty Name="Trip_average_Litres_100_KM" ColumnName="Trip average Litres/100 KM" />
+                <ScalarProperty Name="Trip_distance__stored_in_vehicle_profile_" ColumnName="Trip distance (stored in vehicle profile)" />
+                <ScalarProperty Name="O2_Volts_Bank_1_sensor_1" ColumnName="O2 Volts Bank 1 sensor 1" />
+                <ScalarProperty Name="O2_Volts_Bank_1_sensor_2" ColumnName="O2 Volts Bank 1 sensor 2" />
+                <ScalarProperty Name="O2_Volts_Bank_1_sensor_3" ColumnName="O2 Volts Bank 1 sensor 3" />
+                <ScalarProperty Name="O2_Volts_Bank_1_sensor_4" ColumnName="O2 Volts Bank 1 sensor 4" />
+                <ScalarProperty Name="O2_Volts_Bank_2_sensor_1" ColumnName="O2 Volts Bank 2 sensor 1" />
+                <ScalarProperty Name="O2_Volts_Bank_2_sensor_2" ColumnName="O2 Volts Bank 2 sensor 2" />
+                <ScalarProperty Name="O2_Volts_Bank_2_sensor_3" ColumnName="O2 Volts Bank 2 sensor 3" />
+                <ScalarProperty Name="C_O2_Volts_Bank_2_sensor_4" ColumnName=" O2 Volts Bank 2 sensor 4" />
+                <ScalarProperty Name="Acceleration_Sensor_X_axis_" ColumnName="Acceleration Sensor(X axis)" />
+                <ScalarProperty Name="Acceleration_Sensor_Y_axis_" ColumnName="Acceleration Sensor(Y axis)" />
+                <ScalarProperty Name="C__Acceleration_Sensor_Z_axis_" ColumnName="  Acceleration Sensor(Z axis)" />
+                <ScalarProperty Name="Acceleration_Sensor_Total_" ColumnName="Acceleration Sensor(Total)" />
+                <ScalarProperty Name="Torque" ColumnName="Torque" />
+                <ScalarProperty Name="Horsepower__At_the_wheels_" ColumnName="Horsepower (At the wheels)" />
+                <ScalarProperty Name="C_0_60mph_Time" ColumnName=" 0-60mph Time" />
+                <ScalarProperty Name="C__0_100kph_Time" ColumnName="  0-100kph Time" />
+                <ScalarProperty Name="C1_4_mile_time" ColumnName="1/4 mile time" />
+                <ScalarProperty Name="C_1_8_mile_time" ColumnName=" 1/8 mile time" />
+                <ScalarProperty Name="GPS_vs_OBD_Speed_difference" ColumnName="GPS vs OBD Speed difference" />
+                <ScalarProperty Name="Voltage__OBD_Adapter_" ColumnName="Voltage (OBD Adapter)" />
+                <ScalarProperty Name="GPS_Accuracy" ColumnName="GPS Accuracy" />
+                <ScalarProperty Name="C_GPS_Satellites" ColumnName=" GPS Satellites" />
+                <ScalarProperty Name="C_GPS_Bearing" ColumnName=" GPS Bearing" />
+                <ScalarProperty Name="C_O2_Sensor1_wide_range_Voltage" ColumnName=" O2 Sensor1 wide-range Voltage" />
+                <ScalarProperty Name="O2_Sensor2_wide_range_Voltage" ColumnName="O2 Sensor2 wide-range Voltage" />
+                <ScalarProperty Name="C_O2_Sensor3_wide_range_Voltage" ColumnName=" O2 Sensor3 wide-range Voltage" />
+                <ScalarProperty Name="C_O2_Sensor4_wide_range_Voltage" ColumnName=" O2 Sensor4 wide-range Voltage" />
+                <ScalarProperty Name="O2_Sensor5_wide_range_Voltage" ColumnName="O2 Sensor5 wide-range Voltage" />
+                <ScalarProperty Name="O2_Sensor6_wide_range_Voltage" ColumnName="O2 Sensor6 wide-range Voltage" />
+                <ScalarProperty Name="O2_Sensor7_wide_range_Voltage" ColumnName="O2 Sensor7 wide-range Voltage" />
+                <ScalarProperty Name="O2_Sensor8_wide_range_Voltage" ColumnName="O2 Sensor8 wide-range Voltage" />
+                <ScalarProperty Name="C_Air_Fuel_Ratio_Measured_" ColumnName=" Air Fuel Ratio(Measured)" />
+                <ScalarProperty Name="Tilt_x_" ColumnName="Tilt(x)" />
+                <ScalarProperty Name="C_Tilt_y_" ColumnName=" Tilt(y)" />
+                <ScalarProperty Name="C_Tilt_z_" ColumnName=" Tilt(z)" />
+                <ScalarProperty Name="Air_Fuel_Ratio_Commanded_" ColumnName="Air Fuel Ratio(Commanded)" />
+                <ScalarProperty Name="C_0_200kph_Time" ColumnName=" 0-200kph Time" />
+                <ScalarProperty Name="C_COâ___in_g_km__Instantaneous_" ColumnName=" COâ‚‚ in g/km (Instantaneous)" />
+                <ScalarProperty Name="C_COâ___in_g_km__Average_" ColumnName=" COâ‚‚ in g/km (Average)" />
+                <ScalarProperty Name="C_Fuel_flow_rate_minute" ColumnName=" Fuel flow rate/minute" />
+                <ScalarProperty Name="Fuel_cost__trip_" ColumnName="Fuel cost (trip)" />
+                <ScalarProperty Name="Fuel_flow_rate_hour" ColumnName="Fuel flow rate/hour" />
+                <ScalarProperty Name="C60_120mph_Time" ColumnName="60-120mph Time" />
+                <ScalarProperty Name="C60_80mph_Time" ColumnName="60-80mph Time" />
+                <ScalarProperty Name="C40_60mph_Time" ColumnName="40-60mph Time" />
+                <ScalarProperty Name="C__80_100mph_Time" ColumnName="  80-100mph Time" />
+                <ScalarProperty Name="C_Average_trip_speed_whilst_moving_only_" ColumnName=" Average trip speed(whilst moving only)" />
+                <ScalarProperty Name="C100_0kph_Time" ColumnName="100-0kph Time" />
+                <ScalarProperty Name="C60_0mph_Time" ColumnName="60-0mph Time" />
+                <ScalarProperty Name="Trip_Time_Since_journey_start_" ColumnName="Trip Time(Since journey start)" />
+                <ScalarProperty Name="Trip_time_whilst_stationary_" ColumnName="Trip time(whilst stationary)" />
+                <ScalarProperty Name="Trip_Time_whilst_moving_" ColumnName="Trip Time(whilst moving)" />
+                <ScalarProperty Name="Volumetric_Efficiency__Calculated_" ColumnName="Volumetric Efficiency (Calculated)" />
+                <ScalarProperty Name="Distance_to_empty__Estimated_" ColumnName="Distance to empty (Estimated)" />
+                <ScalarProperty Name="Fuel_Remaining__Calculated_from_vehicle_profile_" ColumnName="Fuel Remaining (Calculated from vehicle profile)" />
+                <ScalarProperty Name="C__Cost_per_mile_km__Instant_" ColumnName="  Cost per mile/km (Instant)" />
+                <ScalarProperty Name="C_Cost_per_mile_km__Trip_" ColumnName=" Cost per mile/km (Trip)" />
+                <ScalarProperty Name="Barometer__on_Android_device_" ColumnName="Barometer (on Android device)" />
+                <ScalarProperty Name="Fuel_used__trip_" ColumnName="Fuel used (trip)" />
+                <ScalarProperty Name="Average_trip_speed_whilst_stopped_or_moving_" ColumnName="Average trip speed(whilst stopped or moving)" />
+                <ScalarProperty Name="C_Engine_kW__At_the_wheels_" ColumnName=" Engine kW (At the wheels)" />
+                <ScalarProperty Name="C80_120kph_Time" ColumnName="80-120kph Time" />
+                <ScalarProperty Name="C_60_130mph_Time" ColumnName=" 60-130mph Time" />
+                <ScalarProperty Name="C0_30mph_Time" ColumnName="0-30mph Time" />
+                <ScalarProperty Name="C_Miles_Per_Gallon_Long_Term_Average_" ColumnName=" Miles Per Gallon(Long Term Average)" />
+                <ScalarProperty Name="C_Kilometers_Per_Litre_Long_Term_Average_" ColumnName=" Kilometers Per Litre(Long Term Average)" />
+                <ScalarProperty Name="Litres_Per_100_Kilometer_Long_Term_Average_" ColumnName="Litres Per 100 Kilometer(Long Term Average)" />
+                <ScalarProperty Name="C_Session_ID" ColumnName=" Session ID" />
+                <ScalarProperty Name="C__Timestamp" ColumnName="  Timestamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
