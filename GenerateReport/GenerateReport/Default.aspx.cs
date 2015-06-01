@@ -23,7 +23,7 @@ namespace GenerateReport
             string filePath = Path.Combine(Server.MapPath("~/PDFFiles"), fileName);
 
             Document doc = new Document(PageSize.A4, 2, 2, 2, 2);
-            Paragraph p = new Paragraph("Export Database data to PDF file");
+            Paragraph p = new Paragraph("Data Sheet");
 
             try
             {
@@ -32,18 +32,19 @@ namespace GenerateReport
                 pdfTab.HorizontalAlignment = 1;
                 pdfTab.SpacingBefore = 20f;
 
-                List<InspectionField> data = new List<InspectionField>();
-                InspectionField data_1 = new InspectionField(1,"Hello");
-                InspectionField data_2 = new InspectionField(2, "Hola");
-                data.Add(data_1);
-                data.Add(data_2);
+                Table data = new Table();
 
-                foreach (var item in data)
+
+                foreach (var prop in data.GetType().GetProperties())
                 {
-                    pdfTab.AddCell(item.Device_ID.ToString());
-                    pdfTab.AddCell(item.Feild_1.ToString());
-                    //ADD Everthing else as well
+                    PdfPCell[] cells = new PdfPCell[] {  
+                                                        new PdfPCell(new Phrase(prop.Name)),
+                                                        new PdfPCell(new Phrase(prop.GetValue(data,null).ToString()))
+                                                      };
 
+
+                    PdfPRow row = new PdfPRow(cells);
+                    pdfTab.Rows.Add(row);
                 }
 
                 doc.Open();
@@ -73,5 +74,7 @@ namespace GenerateReport
                 doc.Close();
             }
         }
+
+      
     }
 }

@@ -14,153 +14,642 @@ namespace GenerateReport
     
     public partial class Table
     {
+        
         public int Device_ID { get; set; }
+
         public string Mass_Air_Flow_Rate { get; set; }
+
         public string Throttle_Position_Manifold_ { get; set; }
+
         public string C_Air_Status { get; set; }
+
         public string C_Fuel_trim_Bank__1_Sensor__1 { get; set; }
+
         public string C_Fuel_trim_Bank__1_Sensor__2 { get; set; }
+
         public string Fuel_trim_Bank__1_Sensor__3 { get; set; }
+
         public string Fuel_trim_Bank__1_Sensor__4 { get; set; }
+
         public string Fuel_trim_Bank__2_Sensor__1 { get; set; }
+
         public string Fuel_trim_Bank__2_Sensor__2 { get; set; }
+
         public string Fuel_trim_Bank__2_Sensor__3 { get; set; }
+
         public string Fuel_trim_Bank__2_Sensor__4 { get; set; }
+
         public string Run_Time_since_engine_start { get; set; }
+
         public string Distance_travelled_with_MIL_CEL_lit { get; set; }
+
         public string Fuel_Rail_Pressure__relative_to_manifold_vacuum_ { get; set; }
+
         public string Fuel_Rail_Pressure { get; set; }
+
         public string O2_Sensor1_Equivalence_Ratio { get; set; }
+
         public string O2_Sensor2_Equivalence_Ratio { get; set; }
+
         public string O2_Sensor3_Equivalence_Ratio { get; set; }
+
         public string O2_Sensor4_Equivalence_Ratio { get; set; }
+
         public string O2_Sensor5_Equivalence_Ratio { get; set; }
+
         public string O2_Sensor6_Equivalence_Ratio { get; set; }
+
         public string O2_Sensor7_Equivalence_Ratio { get; set; }
+
         public string O2_Sensor8_Equivalence_Ratio { get; set; }
+
         public string C_EGR_Commanded { get; set; }
+
         public string EGR_Error { get; set; }
+
         public string Fuel_Level__From_Engine_ECU_ { get; set; }
+
         public string C_Fuel_Status { get; set; }
+
         public string Distance_travelled_since_codes_cleared { get; set; }
+
         public string C_Evap_System_Vapour_Pressure { get; set; }
+
         public string Barometric_pressure__from_vehicle_ { get; set; }
+
         public string O2_Sensor1_Equivalence_Ratio_alternate_ { get; set; }
+
         public string C_Catalyst_Temperature__Bank_1_Sensor_1_ { get; set; }
+
         public string C__Catalyst_Temperature__Bank_2_Sensor_1_ { get; set; }
+
         public string C_Catalyst_Temperature__Bank_1_Sensor_2_ { get; set; }
+
         public string Catalyst_Temperature__Bank_2_Sensor_2_ { get; set; }
+
         public string Engine_Load { get; set; }
+
         public string Voltage__Control_Module_ { get; set; }
+
         public string Engine_Load_Absolute_ { get; set; }
+
         public string Commanded_Equivalence_Ratio_lambda_ { get; set; }
+
         public string Relative_Throttle_Position { get; set; }
+
         public string Ambient_air_temp { get; set; }
+
         public string Absolute_Throttle_Position_B { get; set; }
+
         public string Accelerator_PedalPosition_D { get; set; }
+
         public string Accelerator_PedalPosition_E { get; set; }
+
         public string C_Accelerator_PedalPosition_F { get; set; }
+
         public string Engine_Coolant_Temperature { get; set; }
+
         public string Ethanol_Fuel__ { get; set; }
+
         public string Relative_Accelerator_Pedal_Position { get; set; }
+
         public string C_Engine_Oil_Temperature { get; set; }
+
         public string C_Fuel_Trim_Bank_1_Short_Term { get; set; }
+
         public string C_Fuel_Trim_Bank_1_Long_Term { get; set; }
+
         public string Exhaust_Gas_Temperature_1 { get; set; }
+
         public string C_Exhaust_Gas_Temperature_2 { get; set; }
+
         public string Fuel_Trim_Bank_2_Short_Term { get; set; }
-        public string Fuel_Trim_Bank_2_Long_Term { get; set; }
-        public string Fuel_pressure { get; set; }
-        public string C_Intake_Manifold_Pressure { get; set; }
-        public string Transmission_Temperature_Method_2_ { get; set; }
-        public string Engine_RPM { get; set; }
-        public string C_Speed__OBD_ { get; set; }
-        public string C_Timing_Advance { get; set; }
-        public string Intake_Air_Temperature { get; set; }
-        public string Transmission_Temperature_Method_1_ { get; set; }
-        public string Speed__GPS_ { get; set; }
-        public string GPS_Longitude { get; set; }
-        public string GPS_Latitude { get; set; }
-        public string GPS_Altitude { get; set; }
-        public string Miles_Per_Gallon_Instant_ { get; set; }
-        public string Turbo_Boost___Vacuum_Gauge { get; set; }
-        public string C_Kilometers_Per_Litre_Instant_ { get; set; }
-        public string Trip_Distance { get; set; }
-        public string Trip_average_MPG { get; set; }
-        public string C_Trip_average_KPL { get; set; }
-        public string Litres_Per_100_Kilometer_Instant_ { get; set; }
-        public string Trip_average_Litres_100_KM { get; set; }
-        public string Trip_distance__stored_in_vehicle_profile_ { get; set; }
-        public string O2_Volts_Bank_1_sensor_1 { get; set; }
-        public string O2_Volts_Bank_1_sensor_2 { get; set; }
-        public string O2_Volts_Bank_1_sensor_3 { get; set; }
-        public string O2_Volts_Bank_1_sensor_4 { get; set; }
-        public string O2_Volts_Bank_2_sensor_1 { get; set; }
-        public string O2_Volts_Bank_2_sensor_2 { get; set; }
-        public string O2_Volts_Bank_2_sensor_3 { get; set; }
-        public string C_O2_Volts_Bank_2_sensor_4 { get; set; }
-        public string Acceleration_Sensor_X_axis_ { get; set; }
-        public string Acceleration_Sensor_Y_axis_ { get; set; }
-        public string C__Acceleration_Sensor_Z_axis_ { get; set; }
-        public string Acceleration_Sensor_Total_ { get; set; }
-        public string Torque { get; set; }
-        public string Horsepower__At_the_wheels_ { get; set; }
-        public string C_0_60mph_Time { get; set; }
-        public string C__0_100kph_Time { get; set; }
-        public string C1_4_mile_time { get; set; }
-        public string C_1_8_mile_time { get; set; }
-        public string GPS_vs_OBD_Speed_difference { get; set; }
-        public string Voltage__OBD_Adapter_ { get; set; }
-        public string GPS_Accuracy { get; set; }
-        public string C_GPS_Satellites { get; set; }
-        public string C_GPS_Bearing { get; set; }
-        public string C_O2_Sensor1_wide_range_Voltage { get; set; }
-        public string O2_Sensor2_wide_range_Voltage { get; set; }
-        public string C_O2_Sensor3_wide_range_Voltage { get; set; }
-        public string C_O2_Sensor4_wide_range_Voltage { get; set; }
-        public string O2_Sensor5_wide_range_Voltage { get; set; }
-        public string O2_Sensor6_wide_range_Voltage { get; set; }
-        public string O2_Sensor7_wide_range_Voltage { get; set; }
-        public string O2_Sensor8_wide_range_Voltage { get; set; }
-        public string C_Air_Fuel_Ratio_Measured_ { get; set; }
-        public string Tilt_x_ { get; set; }
-        public string C_Tilt_y_ { get; set; }
-        public string C_Tilt_z_ { get; set; }
-        public string Air_Fuel_Ratio_Commanded_ { get; set; }
-        public string C_0_200kph_Time { get; set; }
-        public string C_COâ___in_g_km__Instantaneous_ { get; set; }
-        public string C_COâ___in_g_km__Average_ { get; set; }
-        public string C_Fuel_flow_rate_minute { get; set; }
-        public string Fuel_cost__trip_ { get; set; }
-        public string Fuel_flow_rate_hour { get; set; }
-        public string C60_120mph_Time { get; set; }
-        public string C60_80mph_Time { get; set; }
-        public string C40_60mph_Time { get; set; }
-        public string C__80_100mph_Time { get; set; }
-        public string C_Average_trip_speed_whilst_moving_only_ { get; set; }
-        public string C100_0kph_Time { get; set; }
-        public string C60_0mph_Time { get; set; }
-        public string Trip_Time_Since_journey_start_ { get; set; }
-        public string Trip_time_whilst_stationary_ { get; set; }
-        public string Trip_Time_whilst_moving_ { get; set; }
-        public string Volumetric_Efficiency__Calculated_ { get; set; }
-        public string Distance_to_empty__Estimated_ { get; set; }
+
+         public string Fuel_Trim_Bank_2_Long_Term { get; set; }
+
+         public string Fuel_pressure { get; set; }
+
+         public string C_Intake_Manifold_Pressure { get; set; }
+
+         public string Transmission_Temperature_Method_2_ { get; set; }
+
+         public string Engine_RPM { get; set; }
+
+         public string C_Speed__OBD_ { get; set; }
+
+         public string C_Timing_Advance { get; set; }
+
+         public string Intake_Air_Temperature { get; set; }
+
+         public string Transmission_Temperature_Method_1_ { get; set; }
+
+         public string Speed__GPS_ { get; set; }
+
+         public string GPS_Longitude { get; set; }
+
+         public string GPS_Latitude { get; set; }
+
+         public string GPS_Altitude { get; set; }
+
+         public string Miles_Per_Gallon_Instant_ { get; set; }
+
+         public string Turbo_Boost___Vacuum_Gauge { get; set; }
+
+         public string C_Kilometers_Per_Litre_Instant_ { get; set; }
+
+         public string Trip_Distance { get; set; }
+
+         public string Trip_average_MPG { get; set; }
+
+         public string C_Trip_average_KPL { get; set; }
+
+         public string Litres_Per_100_Kilometer_Instant_ { get; set; }
+
+         public string Trip_average_Litres_100_KM { get; set; }
+
+         public string Trip_distance__stored_in_vehicle_profile_ { get; set; }
+
+         public string O2_Volts_Bank_1_sensor_1 { get; set; }
+
+         public string O2_Volts_Bank_1_sensor_2 { get; set; }
+
+         public string O2_Volts_Bank_1_sensor_3 { get; set; }
+
+         public string O2_Volts_Bank_1_sensor_4 { get; set; }
+
+         public string O2_Volts_Bank_2_sensor_1 { get; set; }
+
+         public string O2_Volts_Bank_2_sensor_2 { get; set; }
+
+         public string O2_Volts_Bank_2_sensor_3 { get; set; }
+
+         public string C_O2_Volts_Bank_2_sensor_4 { get; set; }
+
+         public string Acceleration_Sensor_X_axis_ { get; set; }
+
+         public string Acceleration_Sensor_Y_axis_ { get; set; }
+
+         public string C__Acceleration_Sensor_Z_axis_ { get; set; }
+
+         public string Acceleration_Sensor_Total_ { get; set; }
+
+         public string Torque { get; set; }
+
+         public string Horsepower__At_the_wheels_ { get; set; }
+
+         public string C_0_60mph_Time { get; set; }
+
+         public string C__0_100kph_Time { get; set; }
+
+         public string C1_4_mile_time { get; set; }
+
+         public string C_1_8_mile_time { get; set; }
+
+         public string GPS_vs_OBD_Speed_difference { get; set; }
+
+         public string Voltage__OBD_Adapter_ { get; set; }
+
+         public string GPS_Accuracy { get; set; }
+
+         public string C_GPS_Satellites { get; set; }
+
+         public string C_GPS_Bearing { get; set; }
+
+         public string C_O2_Sensor1_wide_range_Voltage { get; set; }
+
+         public string O2_Sensor2_wide_range_Voltage { get; set; }
+
+         public string C_O2_Sensor3_wide_range_Voltage { get; set; }
+
+         public string C_O2_Sensor4_wide_range_Voltage { get; set; }
+
+         public string O2_Sensor5_wide_range_Voltage { get; set; }
+
+         public string O2_Sensor6_wide_range_Voltage { get; set; }
+
+         public string O2_Sensor7_wide_range_Voltage { get; set; }
+
+         public string O2_Sensor8_wide_range_Voltage { get; set; }
+         public string C_Air_Fuel_Ratio_Measured_ { get; set; }
+
+         public string Tilt_x_ { get; set; }
+
+         public string C_Tilt_y_ { get; set; }
+
+         public string C_Tilt_z_ { get; set; }
+
+         public string Air_Fuel_Ratio_Commanded_ { get; set; }
+
+         public string C_0_200kph_Time { get; set; }
+
+         public string C_COâ___in_g_km__Instantaneous_ { get; set; }
+
+         public string C_COâ___in_g_km__Average_ { get; set; }
+
+         public string C_Fuel_flow_rate_minute { get; set; }
+
+         public string Fuel_cost__trip_ { get; set; }
+
+         
+         public string Fuel_flow_rate_hour { get; set; }
+
+         
+         public string C60_120mph_Time { get; set; }
+
+         
+         public string C60_80mph_Time { get; set; }
+
+        
+         public string C40_60mph_Time { get; set; }
+
+         
+         public string C__80_100mph_Time { get; set; }
+
+        
+         public string C_Average_trip_speed_whilst_moving_only_ { get; set; }
+
+         public string C100_0kph_Time { get; set; }
+
+        
+         public string C60_0mph_Time { get; set; }
+
+         
+         public string Trip_Time_Since_journey_start_ { get; set; }
+
+        
+         public string Trip_time_whilst_stationary_ { get; set; }
+
+
+         public string Trip_Time_whilst_moving_ { get; set; }
+
+        
+         public string Volumetric_Efficiency__Calculated_ { get; set; }
+
+        
+         public string Distance_to_empty__Estimated_ { get; set; }
         public string Fuel_Remaining__Calculated_from_vehicle_profile_ { get; set; }
+
+        
         public string C__Cost_per_mile_km__Instant_ { get; set; }
+
+        
         public string C_Cost_per_mile_km__Trip_ { get; set; }
+
+      
         public string Barometer__on_Android_device_ { get; set; }
+
+       
         public string Fuel_used__trip_ { get; set; }
+
+        
         public string Average_trip_speed_whilst_stopped_or_moving_ { get; set; }
+
+        
         public string C_Engine_kW__At_the_wheels_ { get; set; }
+
+        
         public string C80_120kph_Time { get; set; }
+
         public string C_60_130mph_Time { get; set; }
+
+        
         public string C0_30mph_Time { get; set; }
+
+       
         public string C_Miles_Per_Gallon_Long_Term_Average_ { get; set; }
+
+        
         public string C_Kilometers_Per_Litre_Long_Term_Average_ { get; set; }
+
         public string Litres_Per_100_Kilometer_Long_Term_Average_ { get; set; }
+
+        
         public string C_Session_ID { get; set; }
+
+      
         public string C__Timestamp { get; set; }
 
+
+        public Table()
+        {
+             Device_ID =1;
+
+        Mass_Air_Flow_Rate ="Default";
+
+        Throttle_Position_Manifold_ ="Default";
+
+        C_Air_Status ="Default";
+
+        C_Fuel_trim_Bank__1_Sensor__1 ="Default";
+
+        C_Fuel_trim_Bank__1_Sensor__2 ="Default";
+
+        Fuel_trim_Bank__1_Sensor__3 ="Default";
+
+        Fuel_trim_Bank__1_Sensor__4 ="Default";
+
+        Fuel_trim_Bank__2_Sensor__1 ="Default";
+
+        Fuel_trim_Bank__2_Sensor__2 ="Default";
+
+        Fuel_trim_Bank__2_Sensor__3 ="Default";
+
+        Fuel_trim_Bank__2_Sensor__4 ="Default";
+
+        Run_Time_since_engine_start ="Default";
+
+        Distance_travelled_with_MIL_CEL_lit  ="Default";
+           
+        Fuel_Rail_Pressure__relative_to_manifold_vacuum_  ="Default";
+
+        Fuel_Rail_Pressure  ="Default";
+
+        O2_Sensor1_Equivalence_Ratio  ="Default";
+
+        O2_Sensor2_Equivalence_Ratio  ="Default";
+
+        O2_Sensor3_Equivalence_Ratio  ="Default";
+
+        O2_Sensor4_Equivalence_Ratio  ="Default";
+
+        O2_Sensor5_Equivalence_Ratio  ="Default";
+
+        O2_Sensor6_Equivalence_Ratio  ="Default";
+
+        O2_Sensor7_Equivalence_Ratio  ="Default";
+
+        O2_Sensor8_Equivalence_Ratio  ="Default";
+
+        C_EGR_Commanded  ="Default";
+
+        EGR_Error ="Default";
+
+        Fuel_Level__From_Engine_ECU_ ="Default";
+
+        C_Fuel_Status ="Default";
+
+        Distance_travelled_since_codes_cleared ="Default";
+
+        C_Evap_System_Vapour_Pressure ="Default";
+
+        Barometric_pressure__from_vehicle_ ="Default";
+
+        O2_Sensor1_Equivalence_Ratio_alternate_  ="Default";
+
+        C_Catalyst_Temperature__Bank_1_Sensor_1_  ="Default";
+
+        C__Catalyst_Temperature__Bank_2_Sensor_1_  ="Default";
+
+        C_Catalyst_Temperature__Bank_1_Sensor_2_  ="Default";
+
+        Catalyst_Temperature__Bank_2_Sensor_2_  ="Default";
+
+        Engine_Load  ="Default";
+
+        Voltage__Control_Module_  ="Default";
+
+        Engine_Load_Absolute_  ="Default";
+
+        Commanded_Equivalence_Ratio_lambda_  ="Default";
+
+        Relative_Throttle_Position  ="Default";
+
+        Ambient_air_temp  ="Default";
+
+        Absolute_Throttle_Position_B  ="Default";
+
+        Accelerator_PedalPosition_D  ="Default";
+
+        Accelerator_PedalPosition_E  ="Default";
+
+        C_Accelerator_PedalPosition_F  ="Default";
+
+        Engine_Coolant_Temperature  ="Default";
+
+        Ethanol_Fuel__  ="Default";
+
+        Relative_Accelerator_Pedal_Position  ="Default";
+
+        C_Engine_Oil_Temperature  ="Default";
+
+        C_Fuel_Trim_Bank_1_Short_Term  ="Default";
+
+        C_Fuel_Trim_Bank_1_Long_Term  ="Default";
+
+        Exhaust_Gas_Temperature_1  ="Default";
+
+        C_Exhaust_Gas_Temperature_2  ="Default";
+
+        Fuel_Trim_Bank_2_Short_Term ="Default";
+
+         Fuel_Trim_Bank_2_Long_Term ="Default";
+
+         Fuel_pressure ="Default";
+
+         C_Intake_Manifold_Pressure ="Default";
+
+         Transmission_Temperature_Method_2_ ="Default";
+
+         Engine_RPM ="Default";
+
+         C_Speed__OBD_ ="Default";
+
+         C_Timing_Advance ="Default";
+
+         Intake_Air_Temperature ="Default";
+
+         Transmission_Temperature_Method_1_ ="Default";
+
+         Speed__GPS_ ="Default";
+
+         GPS_Longitude ="Default";
+
+         GPS_Latitude ="Default";
+
+         GPS_Altitude ="Default";
+
+         Miles_Per_Gallon_Instant_ ="Default";
+
+         Turbo_Boost___Vacuum_Gauge ="Default";
+
+         C_Kilometers_Per_Litre_Instant_ ="Default";
+
+         Trip_Distance ="Default";
+
+         Trip_average_MPG ="Default";
+
+         C_Trip_average_KPL ="Default";
+
+         Litres_Per_100_Kilometer_Instant_ ="Default";
+
+         Trip_average_Litres_100_KM ="Default";
+
+         Trip_distance__stored_in_vehicle_profile_ ="Default";
+
+         O2_Volts_Bank_1_sensor_1 ="Default";
+
+         O2_Volts_Bank_1_sensor_2 ="Default";
+
+         O2_Volts_Bank_1_sensor_3 ="Default";
+
+         O2_Volts_Bank_1_sensor_4 ="Default";
+
+         O2_Volts_Bank_2_sensor_1 ="Default";
+
+         O2_Volts_Bank_2_sensor_2 ="Default";
+
+         O2_Volts_Bank_2_sensor_3 ="Default";
+
+         C_O2_Volts_Bank_2_sensor_4 ="Default";
+
+         Acceleration_Sensor_X_axis_ ="Default";
+
+         Acceleration_Sensor_Y_axis_ ="Default";
+
+         C__Acceleration_Sensor_Z_axis_ ="Default";
+
+         Acceleration_Sensor_Total_ ="Default";
+
+         Torque ="Default";
+
+         Horsepower__At_the_wheels_ ="Default";
+
+         C_0_60mph_Time ="Default";
+
+         C__0_100kph_Time ="Default";
+
+         C1_4_mile_time ="Default";
+
+         C_1_8_mile_time ="Default";
+
+         GPS_vs_OBD_Speed_difference ="Default";
+
+         Voltage__OBD_Adapter_ ="Default";
+
+         GPS_Accuracy ="Default";
+
+         C_GPS_Satellites ="Default";
+
+         C_GPS_Bearing ="Default";
+
+         C_O2_Sensor1_wide_range_Voltage ="Default";
+
+         O2_Sensor2_wide_range_Voltage ="Default";
+
+         C_O2_Sensor3_wide_range_Voltage ="Default";
+
+         C_O2_Sensor4_wide_range_Voltage ="Default";
+
+         O2_Sensor5_wide_range_Voltage ="Default";
+
+         O2_Sensor6_wide_range_Voltage ="Default";
+
+         O2_Sensor7_wide_range_Voltage ="Default";
+
+         O2_Sensor8_wide_range_Voltage ="Default";
+
+         C_Air_Fuel_Ratio_Measured_ ="Default";
+
+         Tilt_x_ ="Default";
+
+         C_Tilt_y_ ="Default";
+
+         C_Tilt_z_ ="Default";
+
+         Air_Fuel_Ratio_Commanded_ ="Default";
+
+         C_0_200kph_Time ="Default";
+
+         C_COâ___in_g_km__Instantaneous_ ="Default";
+
+         C_COâ___in_g_km__Average_ ="Default";
+
+         C_Fuel_flow_rate_minute ="Default";
+
+         Fuel_cost__trip_ ="Default";
+
+         
+         Fuel_flow_rate_hour ="Default";
+
+         
+         C60_120mph_Time ="Default";
+
+         
+         C60_80mph_Time ="Default";
+
+        
+         C40_60mph_Time ="Default";
+
+         
+         C__80_100mph_Time ="Default";
+
+        
+         C_Average_trip_speed_whilst_moving_only_ ="Default";
+
+         C100_0kph_Time ="Default";
+
+        
+         C60_0mph_Time ="Default";
+
+         
+         Trip_Time_Since_journey_start_ ="Default";
+
+        
+         Trip_time_whilst_stationary_ ="Default";
+
+
+         Trip_Time_whilst_moving_ ="Default";
+
+        
+         Volumetric_Efficiency__Calculated_ ="Default";
+
+        
+         Distance_to_empty__Estimated_ ="Default";
+
+        Fuel_Remaining__Calculated_from_vehicle_profile_ ="Default";
+
+        
+        C__Cost_per_mile_km__Instant_ ="Default";
+
+        
+        C_Cost_per_mile_km__Trip_ ="Default";
+
+      
+        Barometer__on_Android_device_ ="Default";
+
+       
+        Fuel_used__trip_ ="Default";
+
+        
+        Average_trip_speed_whilst_stopped_or_moving_ ="Default";
+
+        
+        C_Engine_kW__At_the_wheels_ ="Default";
+
+        
+        C80_120kph_Time ="Default";
+
+        C_60_130mph_Time ="Default";
+
+        
+        C0_30mph_Time ="Default";
+
+       
+        C_Miles_Per_Gallon_Long_Term_Average_ ="Default";
+
+        
+        C_Kilometers_Per_Litre_Long_Term_Average_ ="Default";
+
+        Litres_Per_100_Kilometer_Long_Term_Average_ ="Default";
+
+        
+        C_Session_ID ="Default";
+
+
+        C__Timestamp = DateTime.Now.ToString();
+
+
+        }
         
     }
 }
