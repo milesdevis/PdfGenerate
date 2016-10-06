@@ -1,3 +1,3 @@
-#MudFlap Internship: porgram to make PDF export using iTextSharp
+#Program for PDF export functionality 
 
-Developed for http://www.drivojoy.com/ 
+Done using iTextSharp. Developed for http://www.drivojoy.com/ 
